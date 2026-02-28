@@ -2,7 +2,6 @@ package com.sprintforge.identity.controller;
 
 import com.sprintforge.identity.dto.UserRequest;
 import com.sprintforge.identity.dto.UserResponse;
-import com.sprintforge.identity.entity.User;
 import com.sprintforge.identity.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -25,4 +24,6 @@ public class UserController {
     public List<UserResponse> getAllUsers() {
         return userService.getAllUsers();
     }
+
+
 }
