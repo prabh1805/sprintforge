@@ -1,6 +1,7 @@
 package com.sprintforge.identity.controller;
 
 import com.sprintforge.identity.dto.UserAuthResponse;
+import com.sprintforge.identity.dto.UserResponse;
 import com.sprintforge.identity.entity.User;
 import com.sprintforge.identity.service.UserService;
 import lombok.NonNull;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -28,4 +31,5 @@ public class InternalUserController {
         );
         return ResponseEntity.ok(response);
     }
+
 }
